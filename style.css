@@ -1,8 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1{
-    color: red;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-font {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+/* Shared Style */
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.header {
+  width: 1077px;
+  margin: 0 auto;
+}
+.text-color{
+    color: #3A3A3A;
+}
+.btn-primary{
+    background-color: #E02C6D;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 41px;
+    margin-top: 10px;
+}
+/* Navbar style */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.b-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+ul li {
+  display: inline;
+  margin-left: 34px;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgba(58, 58, 58, 1);
+  font-weight: 500;
+}
+/* Banner section style */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.banner-r{
+    background-image: url('./images/Circle\ design.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    
+}
+img{
+    max-width: 100%;
+}
+.b-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+.b-content{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* Sponsor section style */
+main{
+    width: 1110px;
+    margin: 0 auto;
+}
+.sponsor-container {
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* Media Query for Small Device */
+@media screen and (max-width: 576px) {
+    .banner.d-flex, .navbar{
+        flex-direction: column-reverse;
+    }
 }
