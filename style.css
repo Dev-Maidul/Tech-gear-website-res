@@ -177,6 +177,41 @@ main{
 .feature-left img{
     max-width: 100%;
 }
+/* Footer style */
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0a0826;
+  }
+  .footer-content{
+    width: 598px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  .f-heading{
+    font-size: 1.24rem;
+    font-weight: 700;
+  }
+  .footer-content p, span{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #D9DBE1;
+  }
+  footer ul li {
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+  .fa-brands, .fab {
+    font-weight: 400;
+    width: 22px;
+    margin-top: 5px;
+}
+  footer ul li a{
+    color: white;
+  }
 /* Media Query for Small Device */
 @media screen and (max-width: 576px) {
     .banner.d-flex, .navbar{
