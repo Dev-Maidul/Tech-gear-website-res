@@ -98,4 +98,10 @@ main{
     .banner.d-flex, .navbar{
         flex-direction: column-reverse;
     }
+    .sponsor-container {
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+    }
 }
